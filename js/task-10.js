@@ -28,6 +28,7 @@ controls.querySelectorAll("button").forEach((el) =>
       createBoxes(input.valueAsNumber);
     } else if (event.target.dataset.destroy !== undefined) {
       destroyBoxes();
+      input.value = '';
     }
   })
 );
